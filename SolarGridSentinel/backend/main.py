@@ -26,14 +26,16 @@ async def root():
 
 @app.get("/api/grid-metrics")
 async def get_grid_metrics():
-    # STRESS TEST: SIMULATING MASSIVE GRID COLLAPSE
+    # STRESS TEST (Comment out below to simulate collapse)
+    # return { "current_generation": "0.0 MW", "load_shedding_risk": "TOTAL COLLAPSE", "grid_status": "🔴 BLACKOUT" }
+    
     return {
-        "current_generation": "0.0 MW",
-        "community_usage": "42.1 MW",
-        "excess_distributed": "-42.1 MW",
-        "revenue_generated": "CRITICAL LOSS",
-        "load_shedding_risk": "TOTAL COLLAPSE",
-        "grid_status": "🔴 BLACKOUT DETECTED"
+        "current_generation": "42.5 MW",
+        "community_usage": "21.2 MW",
+        "excess_distributed": "21.3 MW",
+        "revenue_generated": "R 142,500",
+        "load_shedding_risk": "Low",
+        "grid_status": "Nominal"
     }
 
 @app.get("/api/energy-trades")
