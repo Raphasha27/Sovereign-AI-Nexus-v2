@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+ENV/
+
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Tech-specific
+.DS_Store
+.vscode/
+.idea/
+*.log

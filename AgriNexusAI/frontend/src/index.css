@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --agri-bg: #022c22; /* Deep Forest */
+  --emerald: #10b981;
+  --lime: #84cc16;
+  --gold: #f59e0b;
+  --glass: rgba(6, 78, 59, 0.6);
+  --border: rgba(132, 204, 22, 0.2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--agri-bg);
+  color: #ecfdf5;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.agri-nexus {
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(132, 204, 22, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+}
+
+.agri-nav {
+  height: 80px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.agri-hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.agri-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.agri-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 32px;
+  transition: all 0.3s;
+}
+
+.agri-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--lime);
+}
+
+.ai-reasoning-panel {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.solution-box {
+  background: rgba(132, 204, 22, 0.05);
+  border-radius: 24px;
+  padding: 2rem;
+  border-left: 6px solid var(--lime);
+  margin-bottom: 1.5rem;
+}
+
+.regional-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.region-item {
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-agri-modern {
+  background: var(--lime);
+  color: #064e3b;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}

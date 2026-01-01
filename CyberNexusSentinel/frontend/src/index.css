@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --cyber-bg: #020617;
+  --neon-blue: #38bdf8;
+  --neon-red: #ef4444;
+  --neon-green: #10b981;
+  --glass: rgba(15, 23, 42, 0.8);
+  --border: rgba(56, 189, 248, 0.2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--cyber-bg);
+  color: #f8fafc;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+.cyber-nexus {
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  background-image: 
+    linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)),
+    radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.1), transparent 70%);
+}
+
+.cyber-nav {
+  height: 80px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.cyber-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cyber-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+}
+
+.log-panel-modern {
+  background: rgba(0,0,0,0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  height: 400px;
+  overflow-y: auto;
+}
+
+.log-line {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  gap: 15px;
+}
+
+.timestamp { color: var(--neon-blue); opacity: 0.7; }
+.threat-high { color: var(--neon-red); font-weight: 700; }
+.threat-ok { color: var(--neon-green); }
+
+.node-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.node-item {
+  background: rgba(255,255,255,0.03);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.scanline {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 2px;
+  background: rgba(56, 189, 248, 0.1);
+  animation: scan 8s linear infinite;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  from { top: 0; }
+  to { top: 100%; }
+}

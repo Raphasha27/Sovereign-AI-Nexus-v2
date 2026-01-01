@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --kasi-bg: #0f172a;
+  --kasi-primary: #f59e0b; /* Sunset Amber */
+  --kasi-secondary: #3b82f6; /* Tech Blue */
+  --kasi-glass: rgba(30, 41, 59, 0.7);
+  --kasi-border: rgba(245, 158, 11, 0.2);
+  --text-white: #f8fafc;
+  --text-dim: #94a3b8;
+}
+
+body {
+  margin: 0;
+  background-color: var(--kasi-bg);
+  color: var(--text-white);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.kasi-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Premium Header */
+.kasi-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: var(--kasi-glass);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--kasi-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.kasi-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kasi-logo {
+  width: 40px;
+  height: 40px;
+  background: var(--kasi-primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #000;
+}
+
+/* User Friendly Hero */
+.kasi-hero {
+  padding: 4rem;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), transparent 60%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kasi-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.kasi-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  max-width: 600px;
+}
+
+/* Integrated Grid */
+.kasi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 4rem 4rem;
+}
+
+.kasi-card {
+  background: var(--kasi-glass);
+  border: 1px solid var(--kasi-border);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.kasi-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--kasi-primary);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+}
+
+/* Trade Table (Modernized) */
+.trade-section {
+  padding: 0 4rem 4rem;
+}
+
+.trade-table-v2 {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.trade-table-v2 th {
+  text-align: left;
+  padding: 1rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.trade-row-v2 {
+  background: rgba(255,255,255,0.03);
+  transition: all 0.2s;
+}
+
+.trade-row-v2:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.trade-row-v2 td {
+  padding: 1.5rem 1rem;
+}
+
+.trade-row-v2 td:first-child { border-radius: 16px 0 0 16px; }
+.trade-row-v2 td:last-child { border-radius: 0 16px 16px 0; }
+
+.status-tag {
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.stage-transit { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.stage-customs { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+/* AI Badge */
+.ai-badge-kasi {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: var(--kasi-primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--kasi-primary);
+  border-radius: 50%;
+  animation: pulse-kasi 2s infinite;
+}
+
+@keyframes pulse-kasi {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+  100% { opacity: 1; transform: scale(1); }
+}

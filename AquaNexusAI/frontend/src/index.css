@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --aqua-bg: #020617;
+  --sky: #0ea5e9;
+  --cyan: #06b6d4;
+  --glass: rgba(15, 23, 42, 0.7);
+  --border: rgba(14, 165, 233, 0.2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--aqua-bg);
+  color: #f0f9ff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.aqua-nexus-v2 {
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.1) 0px, transparent 50%),
+    linear-gradient(rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0.95));
+}
+
+.aqua-nav {
+  height: 80px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.aqua-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.aqua-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.aqua-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 4px;
+  background: linear-gradient(90deg, var(--sky), var(--cyan));
+}
+
+.aqua-split {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.solution-box-aqua {
+  background: rgba(14, 165, 233, 0.03);
+  padding: 2rem;
+  border-radius: 24px;
+  border-left: 4px solid var(--sky);
+  margin-bottom: 2rem;
+}
+
+.btn-aqua-modern {
+  background: var(--sky);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
