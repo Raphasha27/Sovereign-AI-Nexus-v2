@@ -91,4 +91,4 @@ python master_run.py
 - [ ] Blockchain-based trade ledger for Kasi-Logistics.
 - [ ] Neural voice-command HUD for the Sovereign Brain.
 
-**Developed by Antigravity for Raphasha27 - Global Mode 2026.**
+**Developed by Raphasha27 - Global Mode 2026.**
