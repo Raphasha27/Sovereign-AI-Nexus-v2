@@ -2,6 +2,18 @@
 
 > **"Sovereign Intelligence for a Integrated Future."**
 
+## 🖼️ Visual Showcase
+
+### Master Command Center (Global Mode)
+![Master HUD](screenshots/master_hud.png)
+
+### CyberNexus Sentinel SOC
+![CyberNexus](screenshots/cybernexus.png)
+
+### Kasi-Logistics 2.0 Bridge
+![Kasi Logistics](screenshots/kasilogistics.png)
+
+---
 Welcome to the **Raphasha27 AI Sovereign Nexus**, a decentralized, agentic AI ecosystem designed to manage and protect the critical infrastructure and socio-economic vitals of South Africa. Built with a 7-pillar architecture, this system integrates localized AI responses with global standards and Gemini-powered strategic reasoning.
 
 ---
