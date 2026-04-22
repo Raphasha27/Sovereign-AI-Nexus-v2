@@ -1,4 +1,7 @@
-# 👑 THE RAPHASHA27 AI SOVEREIGN NEXUS (v2.0 - GLOBAL MODE)
+# 🏛️ KIROV DYNAMICS | SOVEREIGN AI NEXUS (v2.0)
+
+[![Kirov Dynamics](https://img.shields.io/badge/Kirov_Dynamics-Sovereign_Intelligence-002D62?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27)
+![Status](https://img.shields.io/badge/Status-🚀_Active_Sovereign-3fb950?style=for-the-badge&labelColor=0d1117)
 
 > **"Sovereign Intelligence for a Integrated Future."**
 
