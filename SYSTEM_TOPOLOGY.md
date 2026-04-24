@@ -3,11 +3,13 @@
 Integrated Agentic Intelligence for the Republic of South Africa & International Trade.
 
 ## 🌉 Global Integration Status: ACTIVE
+
 - **Peering Nodes**: London (LHR), Dubai (DXB), Singapore (SIN), Rotterdam (RTM).
 - **Compliance**: UNESCO (Ed), WHO (Health), UN-Water (Aqua), Basel III (Finance).
 - **MASTER HUD**: [http://localhost:5180](http://localhost:5180) (Access all pillars from here)
 
 ## 🛡️ Sovereign Pillars (Sub-Dashboards)
+
 | Pillar | Purpose | Control HUD | API Port |
 | :--- | :--- | :--- | :--- |
 | **EcoArbitrage** | Social Fairness & Basic Utilities | [http://localhost:5173](http://localhost:5173) | 8000 |
@@ -19,12 +21,14 @@ Integrated Agentic Intelligence for the Republic of South Africa & International
 | **AquaNexus** | Water Sovereignty | [http://localhost:5179](http://localhost:5179) | 8006 |
 
 ## 🛠️ Activation Directive
+
 To launch the entire Sovereign Nexus, use the master orchestrator:
 ```bash
 python master_run.py
 ```
 
 ## 🧠 Intelligence Engines
+
 Each pillar features an **Autonomous Intelligence Engine** that solves localized problems:
 - **HydroGuard AI**: Detecting pipe leaks in Sandton.
 - **HealthGuard AI**: Suppressing outbreaks in Alexandra.
