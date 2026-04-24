@@ -5,12 +5,15 @@
 ## 🖼️ Visual Showcase
 
 ### Master Command Center (Global Mode)
+
 ![Master HUD](screenshots/master_hud.png)
 
 ### CyberNexus Sentinel SOC
+
 ![CyberNexus](screenshots/cybernexus.png)
 
 ### Kasi-Logistics 2.0 Bridge
+
 ![Kasi Logistics](screenshots/kasilogistics.png)
 
 ---
@@ -53,6 +56,7 @@ The **Master Command Center** features the "Sovereign Brain"—a strategic advis
 ## 🚦 Installation & Launch
 
 ### 1. Set up Environment
+
 Ensure you have Python and Node.js installed.
 Create a `.env` file in `MasterCommandCenter/backend/`:
 ```env
@@ -60,12 +64,14 @@ GEMINI_API_KEY=your_key_here
 ```
 
 ### 2. Launch the System
+
 Run the master orchestrator from the root directory:
 ```bash
 python master_run.py
 ```
 
 ### 3. Access the Dashboards
+
 -   **Master Command Center**: [http://localhost:5180](http://localhost:5180)
 -   *All individual pillars are accessible via the Master HUD.*
 
@@ -87,6 +93,7 @@ python master_run.py
 ---
 
 ## 🚀 Future Roadmap
+
 - [ ] Integration with real-time satellite telemetry.
 - [ ] Blockchain-based trade ledger for Kasi-Logistics.
 - [ ] Neural voice-command HUD for the Sovereign Brain.
