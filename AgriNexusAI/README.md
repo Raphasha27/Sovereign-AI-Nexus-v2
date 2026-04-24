@@ -4,7 +4,8 @@ Developed by **Raphasha27**, Agri-Nexus AI is a mission-critical platform design
 
 ## 🌽 Core Mission
 
-Food security is a foundation of social stability. Agri-Nexus AI solves two critical problems: 
+Food security is a foundation of social stability. Agri-Nexus AI solves two critical problems:
+
 1. **Pre-consumer Spoilage**: High-severity waste in rural clusters.
 2. **Market Exploitation**: Bridging the gap so smallholder farmers get a fair price directly from retailers.
 
@@ -24,6 +25,7 @@ Food security is a foundation of social stability. Agri-Nexus AI solves two crit
 
 1. Navigate to the `AgriNexusAI` folder.
 2. Activate the harvest shield:
+
    ```bash
    python run_agri.py
    ```

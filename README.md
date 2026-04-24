@@ -25,31 +25,31 @@ Welcome to the **Raphasha27 AI Sovereign Nexus**, a decentralized, agentic AI ec
 
 The Nexus is divided into seven autonomous yet synchronized pillars, each with its own **FastAPI backend** and **Vite/React frontend**.
 
-1.  **🌍 EcoArbitrage AI (Social Harmony)**: Bridges socio-economic fairness with UNESCO/WHO standards.
-2.  **📦 Kasi-Logistics 2.0 (Global Trade)**: Connects township merchants directly to international ports (Rotterdam, Dubai) via neural trade corridors.
-3.  **🛡️ CyberNexus Sentinel (Cyber Fortress)**: A Zero-Trust infrastructure shield with autonomous threat neutralization.
-4.  **☀️ SolarGrid Sentinel (Energy Sovereignty)**: Manages decentralized energy consensus and protects against grid collapse.
-5.  **🌽 Agri-Nexus AI (Food Security)**: Optimizes harvest yields and eliminates market middleman exploitation.
-6.  **🏥 HealthNexus AI (Predictive Wellness)**: Outbreak suppression and community health vitals synced with WHO.
-7.  **💧 AquaNexus AI (Water Sovereignty)**: Protects dams, detects municipal leaks, and ensures neurally-filtered water quality.
+1. **🌍 EcoArbitrage AI (Social Harmony)**: Bridges socio-economic fairness with UNESCO/WHO standards.
+2. **📦 Kasi-Logistics 2.0 (Global Trade)**: Connects township merchants directly to international ports (Rotterdam, Dubai) via neural trade corridors.
+3. **🛡️ CyberNexus Sentinel (Cyber Fortress)**: A Zero-Trust infrastructure shield with autonomous threat neutralization.
+4. **☀️ SolarGrid Sentinel (Energy Sovereignty)**: Manages decentralized energy consensus and protects against grid collapse.
+5. **🌽 Agri-Nexus AI (Food Security)**: Optimizes harvest yields and eliminates market middleman exploitation.
+6. **🏥 HealthNexus AI (Predictive Wellness)**: Outbreak suppression and community health vitals synced with WHO.
+7. **💧 AquaNexus AI (Water Sovereignty)**: Protects dams, detects municipal leaks, and ensures neurally-filtered water quality.
 
 ---
 
 ## 🧠 The Sovereign Brain (Central Intelligence)
 
-The **Master Command Center** features the "Sovereign Brain"—a strategic advisor powered by **Google Gemini 1.5 Flash**. 
+The **Master Command Center** features the "Sovereign Brain"—a strategic advisor powered by **Google Gemini 1.5 Flash**.
 
--   **Aggregated Analysis**: The Brain polls all 7 pillars in real-time.
-    -   **Cross-Sector Reasoning**: It analyzes how a failure in one sector (e.g., Energy) affects others (e.g., Logistics or Health).
-    -   **Crisis Mode**: If a critical failure is detected (like a total grid collapse), the entire HUD enters **Red Alert Mode**, and the AI forces open a strategic intervention plan.
+- **Aggregated Analysis**: The Brain polls all 7 pillars in real-time.
+  - **Cross-Sector Reasoning**: It analyzes how a failure in one sector (e.g., Energy) affects others (e.g., Logistics or Health).
+  - **Crisis Mode**: If a critical failure is detected (like a total grid collapse), the entire HUD enters **Red Alert Mode**, and the AI forces open a strategic intervention plan.
 
 ---
 
 ## 🛠️ Technology Stack
 
--   **Backend**: Python, FastAPI, Pydantic, Uvicorn, Google Generative AI (Gemini), HTTPX.
--   **Frontend**: React, Vite, Vanilla CSS (Premium Glassmorphism), Lucide React.
--   **Orchestration**: Python-based Master Run script for simultaneous 16-process management.
+- **Backend**: Python, FastAPI, Pydantic, Uvicorn, Google Generative AI (Gemini), HTTPX.
+- **Frontend**: React, Vite, Vanilla CSS (Premium Glassmorphism), Lucide React.
+- **Orchestration**: Python-based Master Run script for simultaneous 16-process management.
 
 ---
 
@@ -59,6 +59,7 @@ The **Master Command Center** features the "Sovereign Brain"—a strategic advis
 
 Ensure you have Python and Node.js installed.
 Create a `.env` file in `MasterCommandCenter/backend/`:
+
 ```env
 GEMINI_API_KEY=your_key_here
 ```
@@ -66,14 +67,15 @@ GEMINI_API_KEY=your_key_here
 ### 2. Launch the System
 
 Run the master orchestrator from the root directory:
+
 ```bash
 python master_run.py
 ```
 
 ### 3. Access the Dashboards
 
--   **Master Command Center**: [http://localhost:5180](http://localhost:5180)
--   *All individual pillars are accessible via the Master HUD.*
+- **Master Command Center**: [http://localhost:5180](http://localhost:5180)
+- *All individual pillars are accessible via the Master HUD.*
 
 ---
 

@@ -22,6 +22,7 @@ South Africa's energy grid is under immense pressure. SolarGrid Sentinel uses Ag
 
 1. Navigate to the `SolarGridSentinel` folder.
 2. Activate the grid:
+
    ```bash
    python run_grid.py
    ```
