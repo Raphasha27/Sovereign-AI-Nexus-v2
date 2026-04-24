@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "sovereign-ai-nexus",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/MasterCommandCenter/frontend/index.html"
+    },
+    {
+      "source": "/(Agri|Aqua|Health|Cyber|Solar)NexusAI/(.*)",
+      "destination": "/$1NexusAI/index.html"
+    }
+  ]
+}
