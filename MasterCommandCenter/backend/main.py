@@ -21,19 +21,19 @@ else:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Authorization", "Content-Type"],
 )
 
 PILLAR_ENDPOINTS = {
-    "EcoArbitrage": "http://localhost:8000/api/dashboard",
-    "KasiLogistics": "http://localhost:8001/api/hubs",
-    "CyberNexus": "http://localhost:8002/api/security-status",
-    "SolarGrid": "http://localhost:8003/api/grid-metrics",
-    "AgriNexus": "http://localhost:8004/api/yield-stats",
-    "HealthNexus": "http://localhost:8005/api/health-vitals",
-    "AquaNexus": "http://localhost:8006/api/water-metrics"
+    "EcoArbitrage": os.getenv("ECO_ARBITRAGE_URL", "http://localhost:8000/api/dashboard"),
+    "KasiLogistics": os.getenv("KASI_LOGISTICS_URL", "http://localhost:8001/api/hubs"),
+    "CyberNexus": os.getenv("CYBER_NEXUS_URL", "http://localhost:8002/api/security-status"),
+    "SolarGrid": os.getenv("SOLAR_GRID_URL", "http://localhost:8003/api/grid-metrics"),
+    "AgriNexus": os.getenv("AGRI_NEXUS_URL", "http://localhost:8004/api/yield-stats"),
+    "HealthNexus": os.getenv("HEALTH_NEXUS_URL", "http://localhost:8005/api/health-vitals"),
+    "AquaNexus": os.getenv("AQUA_NEXUS_URL", "http://localhost:8006/api/water-metrics")
 }
 
 async def fetch_pillar_data():
